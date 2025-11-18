@@ -8,7 +8,7 @@ Description rapide: Le projet que je vais présenter consiste à réaliser le je
 - Vérifie à chaque tour si un joueur a gagné et s’il n’y a pas égalité ( plateau plein et sans gagnant )
 - Affichage d’un tableau des scores à la fin de la partie
 - Création d’un programme qui permet à l’ordinateur de jouer le second joueur
-</div>
+
 
 **Entrées:**
 
@@ -22,15 +22,16 @@ Description rapide: Le projet que je vais présenter consiste à réaliser le je
 
 
  1. MODÉLISATION DU PLATEAU
+```Python
 def init_plateau():
     """Crée une grille vide de 6 lignes × 7 colonnes."""
     lignes, colonnes = 6, 7
     plateau = [[" " for _ in range(colonnes)] for _ in range(lignes)]
     return plateau
+```
 
 
-
- 2. AFFICHAGE DU PLATEAU
+ 3. AFFICHAGE DU PLATEAU
 
 
 def afficher_plateau(plateau):  
