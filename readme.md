@@ -31,9 +31,9 @@ def init_plateau():
 ```
 
 
- 3. AFFICHAGE DU PLATEAU
+ 2. AFFICHAGE DU PLATEAU
 
-
+```Python
 def afficher_plateau(plateau):  
     """Affiche le plateau dans la console."""  
     print("\n  1   2   3   4   5   6   7")  
@@ -41,13 +41,14 @@ def afficher_plateau(plateau):
     for ligne in plateau:  
         print("| " + " | ".join(ligne) + " |")  
         print("+" + "---+" * 7)  
-    print()  
+    print()
+```
 
 
 
  3. SAISIE UTILISATEUR
 
-
+```Python
 def demander_colonne(joueur):
     """Demande au joueur de choisir une colonne (1-7)."""
     while True:
@@ -58,13 +59,14 @@ def demander_colonne(joueur):
             else:
                 print("⚠️  Colonne invalide. Choisis entre 1 et 7.")
         except ValueError:
-            print("⚠️  Entrée non valide. Entre un nombre entre 1 et 7.")
+            print("⚠️  Entrée non valide. Entre un nombre entre 1 et 7."
+```
 
 
 
  4. PLACEMENT DES PIONS
 
-
+```Python
 def placer_pion(plateau, col, symbole):
     """Place le pion du joueur dans la colonne choisie."""
     for ligne in reversed(plateau):
@@ -73,12 +75,13 @@ def placer_pion(plateau, col, symbole):
             return True
     print("⚠️  Cette colonne est pleine. Essaie une autre.")
     return False
+```
 
 
 
  5. VÉRIFICATION DES CONDITIONS DE VICTOIRE
 
-
+```Python
 def est_victoire(plateau, symbole):
     """Vérifie si le joueur avec ce symbole a gagné."""
     lignes, colonnes = 6, 7
@@ -108,20 +111,22 @@ def est_victoire(plateau, symbole):
                 return True
 
     return False
+```
 
 
 
  6. VÉRIFICATION DU MATCH NUL
 
-
+```Python
 def est_plein(plateau):
     """Retourne True si le plateau est plein."""
     return all(cellule != " " for ligne in plateau for cellule in ligne)
+```
 
 
  7. PROGRAMME PRINCIPAL
 
-
+```Python
 def puissance4():
     """Boucle principale du jeu."""
     plateau = init_plateau()
@@ -144,14 +149,16 @@ def puissance4():
                 break
 
             joueur = 2 if joueur == 1 else 1
+```
 
 
 
  8. LANCEMENT DU JEU
 
-
+```Python
 if __name__ == "__main__":
     puissance4()
+```
 
 
 
