@@ -2,8 +2,7 @@ PUISSANCE 4
 
 Description rapide: Le projet que je vais présenter consiste à réaliser le jeu du puissance 4 sur python. Il y aura deux manières différentes de jouer dans mon puissance 4, vous pourrez jouer à deux joueurs ou encore affronter un ordinateur. Le but de ce jeu est d’aligner quatres jetons de sa couleur (verticalement,horizontalement ou en diagonale) sur un plateau de jeu. L’ordinateur aura plusieurs niveaux de difficultés. A chaque fin de partie il y aura un tableau des scores où sera affiché le nombre de parties gagnées pour chaque joueur.
 
-<div class = "alert alert-sucess">Objectif de Base:
-
+**Objectif de Base:**
 - Afficher un plateau de jeu ( 6 lignes x 7 lignes), et le mettre a jour apres chaque tour 
 - Permet aux joueurs de placer leur jeton tour à tour dans la colonne du plateau qu’ils souhaitent
 - Vérifie à chaque tour si un joueur a gagné et s’il n’y a pas égalité ( plateau plein et sans gagnant )
@@ -11,7 +10,7 @@ Description rapide: Le projet que je vais présenter consiste à réaliser le je
 - Création d’un programme qui permet à l’ordinateur de jouer le second joueur
 </div>
 
-Entrées:
+**Entrées:**
 
 - Entrer son nom de joueur
 - Choix du mode jeu (ordinateur ou partie local)
@@ -19,7 +18,7 @@ Entrées:
 - La colonne choisie par le joueur pour chaque tour de jeu
 
 
-Liste des fonctions :
+**Liste des fonctions :**
 
 
  1. MODÉLISATION DU PLATEAU
