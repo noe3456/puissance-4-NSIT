@@ -33,14 +33,14 @@ def init_plateau():
  2. AFFICHAGE DU PLATEAU
 
 
-def afficher_plateau(plateau):
-    """Affiche le plateau dans la console."""
-    print("\n  1   2   3   4   5   6   7")
-    print("+" + "---+" * 7)
-    for ligne in plateau:
-        print("| " + " | ".join(ligne) + " |")
-        print("+" + "---+" * 7)
-    print()
+def afficher_plateau(plateau):  
+    """Affiche le plateau dans la console."""  
+    print("\n  1   2   3   4   5   6   7")  
+    print("+" + "---+" * 7)  
+    for ligne in plateau:  
+        print("| " + " | ".join(ligne) + " |")  
+        print("+" + "---+" * 7)  
+    print()  
 
 
 
